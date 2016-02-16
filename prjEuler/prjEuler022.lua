@@ -27,7 +27,7 @@ function readAll(file)
 end
 
 -- raead content from a file and then put '%s' into a table('lines')
-local content = readAll('prjEuler022.txt')
+local content = readAll('../data/prjEuler022.txt')
 local lines = {}
 for word in string.gmatch(content, "%a+") do table.insert(lines,word) end
 table.sort(lines)
